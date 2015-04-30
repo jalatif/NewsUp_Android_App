@@ -140,6 +140,7 @@ public class NewsDownloadService extends Service {
                         String tweet = jsonObject.getString("tweet_content");
                         String tweet_url = jsonObject.getString("tweet_urls");
                         String summary = jsonObject.getString("summary");
+                        if (summary.equalsIgnoreCase("")) continue;
                         String source = jsonObject.getString("source");
                         String language = jsonObject.getString("language");
                         String time_posted = jsonObject.getString("time_posted");

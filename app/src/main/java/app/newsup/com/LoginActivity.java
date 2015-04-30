@@ -48,8 +48,9 @@ public class LoginActivity extends Activity implements View.OnClickListener {
             case R.id.loginButton:
                 String email = emailEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
-                Intent intent = new Intent(this, MainNewsContainer.class);
-                startActivity(intent);
+//                Intent intent = new Intent(this, MainNewsContainer.class);
+//                startActivity(intent);
+
 //                Toast.makeText(this, "You are being logged in", Toast.LENGTH_LONG).show();
 
 //                Intent intent = new Intent(this, NewsService.class);
@@ -57,17 +58,17 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 //                startService(intent);
 //                Toast.makeText(this, "News are being updated", Toast.LENGTH_LONG).show();
 
-//                if (email.equalsIgnoreCase("newsup@retina.com")) {
-//                    if (password.equalsIgnoreCase("newsup")) {
-//                        Intent intent = new Intent(this, MainNewsContainer.class);
-//                        startActivity(intent);
-//                        Toast.makeText(this, "You are being logged in", Toast.LENGTH_LONG).show();
-//                    } else {
-//                        Toast.makeText(this, "Incorrect password", Toast.LENGTH_LONG).show();
-//                    }
-//                } else {
-//                    Toast.makeText(this, "Incorrect username", Toast.LENGTH_LONG).show();
-//                }
+                if (email.equalsIgnoreCase("newsup@retina.com")) {
+                    if (password.equalsIgnoreCase("newsup")) {
+                        Intent intent = new Intent(this, MainNewsContainer.class);
+                        startActivity(intent);
+                        Toast.makeText(this, "You are being logged in", Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(this, "Incorrect password", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    Toast.makeText(this, "Incorrect username", Toast.LENGTH_LONG).show();
+                }
         }
     }
 }

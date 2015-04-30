@@ -1,6 +1,7 @@
 package app.newsup.com;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -47,7 +48,11 @@ public class LatestNewsFragment extends Fragment implements ListView.OnItemClick
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent intent = new Intent(getActivity().getApplicationContext(),
+                NewsDetailsActivity.class);
 
+        intent.putExtra("ID", position);
+        startActivity(intent);
     }
 
     private class StableArrayAdapter extends ArrayAdapter<String> {
