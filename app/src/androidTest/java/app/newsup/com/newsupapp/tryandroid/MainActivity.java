@@ -1,12 +1,13 @@
-package app.newsup.com.newsupapp;
-
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
+package app.newsup.com.newsupapp.tryandroid;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import app.newsup.com.newsupapp.R;
 
 
 public class MainActivity extends ActionBarActivity {

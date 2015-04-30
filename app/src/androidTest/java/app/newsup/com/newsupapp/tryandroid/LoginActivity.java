@@ -1,4 +1,4 @@
-package app.newsup.com.newsupapp;
+package app.newsup.com.newsupapp.tryandroid;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -15,6 +15,8 @@ import android.widget.Toast;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.LinkedBlockingQueue;
+
+import app.newsup.com.newsupapp.R;
 
 /**
  * Created by manshu on 4/28/15.

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/board">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -19,7 +20,8 @@
             android:id="@+id/textView"
             android:textSize="24dp"
             android:paddingEnd="20dp"
-            android:paddingStart="20dp" />
+            android:paddingStart="20dp"
+            android:textColor="@android:color/background_light" />
 
         <EditText
             android:layout_width="match_parent"
@@ -27,7 +29,9 @@
             android:inputType="textEmailAddress"
             android:ems="10"
             android:id="@+id/emailEditText"
-            android:hint="Enter Email ID" />
+            android:hint="Enter Email ID"
+            android:textColor="#ffffffff"
+            android:textColorHint="#ffffffff" />
     </LinearLayout>
 
     <LinearLayout
@@ -44,7 +48,8 @@
             android:id="@+id/textView2"
             android:textSize="24dp"
             android:paddingStart="20dp"
-            android:paddingEnd="20dp" />
+            android:paddingEnd="20dp"
+            android:textColor="#ffffffff" />
 
         <EditText
             android:layout_width="match_parent"
@@ -52,7 +57,9 @@
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/passwordEditText"
-            android:hint="Enter Password" />
+            android:hint="Enter Password"
+            android:textColor="#ffffffff"
+            android:textColorHint="#ffffffff" />
     </LinearLayout>
 
     <Button

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/board">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News Detail"
+            android:id="@+id/newsDetailsTextView"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="32dp"
+            android:textColor="#ffffffff" />
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textClock"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HEADLINE"
+            android:id="@+id/headlineTextView"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="24dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#ffffffff" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Summary\nShowing\n here"
+                android:id="@+id/summaryTextView"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="false"
+                android:textSize="14dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#ffffffff" />
+        </ScrollView>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/textView3"
+                    android:padding="10dp"
+                    android:gravity="left"
+                    android:layout_column="1"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/textView4"
+                    android:padding="10dp"
+                    android:gravity="right"
+                    android:layout_column="2"
+                    android:textColor="#ffffffff" />
+            </TableRow>
+        </TableLayout>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newsWebView"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

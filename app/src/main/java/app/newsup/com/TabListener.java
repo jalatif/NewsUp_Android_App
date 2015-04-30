@@ -1,4 +1,4 @@
-package app.newsup.com.newsupapp;
+package app.newsup.com;
 
 /**
  * Created by manshu on 4/28/15.
@@ -7,6 +7,8 @@ package app.newsup.com.newsupapp;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
+
+import app.newsup.com.newsupapp.R;
 
 public class TabListener implements ActionBar.TabListener {
 
@@ -22,7 +24,7 @@ public class TabListener implements ActionBar.TabListener {
     // that's why we declared an id for the main layout.
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
-        ft.replace(R.id.activity_main, fragment);
+        ft.replace(R.id.activity_main_news_container, fragment);
     }
 
     // When a tab is unselected, we have to hide it from the user's view.

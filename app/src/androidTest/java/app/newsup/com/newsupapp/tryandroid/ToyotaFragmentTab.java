@@ -1,4 +1,4 @@
-package app.newsup.com.newsupapp;
+package app.newsup.com.newsupapp.tryandroid;
 
 /**
  * Created by manshu on 4/28/15.
@@ -8,6 +8,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import app.newsup.com.newsupapp.R;
 
 public class ToyotaFragmentTab extends Fragment {
     @Override

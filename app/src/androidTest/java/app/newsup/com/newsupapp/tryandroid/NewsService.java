@@ -1,10 +1,8 @@
-package app.newsup.com.newsupapp;
+package app.newsup.com.newsupapp.tryandroid;
 
 import android.app.Activity;
 import android.app.IntentService;
-import android.app.Service;
 import android.content.Intent;
-import android.os.IBinder;
 import android.util.Log;
 
 import org.apache.http.HttpResponse;
@@ -50,7 +48,7 @@ public class NewsService extends IntentService {
         Date synced_data = new Date(intent.getStringExtra(STIME));
         System.out.println("Service got synced_data = " + synced_data.toString());
         result = Activity.RESULT_OK;
-        makePostRequest("http://76.10.1.40/mongotest/index_new.php");
+        makePostRequest("http://76.10.1.40/mongotest/index_new.php"); //172.17.193.163
         publishResult("ListService " + synced_data.toString(), result);
         result = Activity.RESULT_CANCELED;
     }

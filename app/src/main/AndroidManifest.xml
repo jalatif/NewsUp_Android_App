@@ -9,17 +9,34 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <!-- Splash screen -->
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/app_name" >
+            android:name="app.newsup.com.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <service android:name="app.newsup.com.newsupapp.NewsService" />
+        <!-- Main activity -->
+        <activity
+            android:name="app.newsup.com.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity android:name="app.newsup.com.MainNewsContainer"
+            android:label="List of News" >
+        </activity>
+
+        <activity android:name="app.newsup.com.NewsDetailsActivity"
+            android:label="News Description" >
+        </activity>
+
+        <service android:name="app.newsup.com.NewsDownloadService"
+            android:exported="false" />
 
     </application>
 

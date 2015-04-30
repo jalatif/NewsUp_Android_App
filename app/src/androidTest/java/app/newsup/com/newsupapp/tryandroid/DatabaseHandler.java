@@ -1,4 +1,4 @@
-package app.newsup.com.newsupapp;
+package app.newsup.com.newsupapp.tryandroid;
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package app.newsup.com.newsupapp;
+package app.newsup.com.newsupapp.tryandroid;
 
 /**
  * Created by manshu on 4/28/15.
